@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Descriptions": {
+      "type": "richtext"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "projects"
+    },
+    "technologies": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::technology.technology",
+      "inversedBy": "projects"
+    },
+    "Project_durations": {
+      "type": "string"
+    },
+    "Youtube_Link": {
+      "type": "string"
+    },
+    "Features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout-components.features"
+    },
+    "Benefits": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout-components.benefits"
+    },
+    "Thumbnil": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout-components.project-thumbnil"
+    }
+  }
+}

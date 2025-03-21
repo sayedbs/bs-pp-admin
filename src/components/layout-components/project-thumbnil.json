@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_layout_components_project_thumbnils",
+  "info": {
+    "displayName": "ProjectThumbnil"
+  },
+  "options": {},
+  "attributes": {
+    "Thumbnil": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
