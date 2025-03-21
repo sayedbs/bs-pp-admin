@@ -24,6 +24,17 @@
       "mappedBy": "categories"
     },
     "Category_BG_image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "thumbnil_small": {
       "allowedTypes": [
         "images",
         "files",
